@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DataBaseProject.DatabaseController">
+   <children>
+      <TextField fx:id="uf" layoutX="41.0" layoutY="121.0" promptText="UserName" />
+      <TextField fx:id="s1f" layoutX="39.0" layoutY="198.0" promptText="StreetNumber" />
+      <Text layoutX="53.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign-Up" wrappingWidth="104.138671875">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ff" layoutX="39.0" layoutY="53.0" promptText="firstName" />
+      <TextField fx:id="lf" layoutX="39.0" layoutY="89.0" promptText="lastName" />
+      <PasswordField fx:id="pf" layoutX="39.0" layoutY="161.0" promptText="password" />
+      <TextField fx:id="s2f" layoutX="39.0" layoutY="235.0" promptText="StreetName" />
+      <TextField fx:id="cf" layoutX="39.0" layoutY="274.0" promptText="City" />
+      <TextField fx:id="stf" layoutX="41.0" layoutY="313.0" promptText="State" />
+      <TextField fx:id="zpf" layoutX="43.0" layoutY="354.0" promptText="zip-code" />
+      <Button fx:id="sgUp" layoutX="76.0" layoutY="422.0" mnemonicParsing="false" onAction="#sgUp" text="Sign-up" />
+      <Text layoutX="546.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete User" wrappingWidth="160.138671875">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="273.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search User" wrappingWidth="194.138671875">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="tA" layoutX="212.0" layoutY="198.0" prefHeight="379.0" prefWidth="574.0" promptText="textArea" />
+      <MenuButton fx:id="duMBut" layoutX="543.0" layoutY="154.0" mnemonicParsing="false" text="Instert value then click me">
+        <items>
+            <MenuItem fx:id="di" mnemonicParsing="false" onAction="#dii" text="Del by ID" />
+          <MenuItem fx:id="du" mnemonicParsing="false" onAction="#duu" text="Del by userName" />
+          <MenuItem fx:id="dl" mnemonicParsing="false" onAction="#dll" text="Del by lastName" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="duF" layoutX="532.0" layoutY="89.0" prefHeight="26.0" prefWidth="214.0" promptText="enter ID userName or LastName" />
+      <TextField fx:id="suF" layoutX="263.0" layoutY="89.0" prefHeight="26.0" prefWidth="214.0" promptText="enter ID userName or LastName" />
+      <MenuButton fx:id="suMBut" layoutX="275.0" layoutY="154.0" mnemonicParsing="false" text="Instert value then click me">
+         <items>
+            <MenuItem fx:id="si" mnemonicParsing="false" onAction="#sii" text="Serch by ID" />
+            <MenuItem fx:id="su" mnemonicParsing="false" onAction="#suu" text="Serch by userName" />
+            <MenuItem fx:id="sl" mnemonicParsing="false" onAction="#sll" text="Serch by lastName" />
+         </items>
+      </MenuButton>
+      <Button fx:id="sb" layoutX="121.0" layoutY="547.0" mnemonicParsing="false" onAction="#sbb" text="See Table" />
+   </children>
+</AnchorPane>
